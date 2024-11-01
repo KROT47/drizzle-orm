@@ -22,8 +22,11 @@ export const jsonSchema: z.ZodType<Json> = z.lazy(() =>
 
 type MapInsertColumnToZod<TColumn extends Column, TType extends z.ZodTypeAny> = TColumn['_']['notNull'] extends false
 	? z.ZodOptional<z.ZodNullable<TType>>
-	: TColumn['_']['hasDefault'] extends true ? z.ZodOptional<TType>
-	: TType;
+		: TColumn['_']['hasDefault'] extends true
+			? z.ZodOptional<TType>
+			: TColumn['_']['generated'] extends true
+				? z.ZodOptional<TType>
+				: TType;
 
 type MapSelectColumnToZod<TColumn extends Column, TType extends z.ZodTypeAny> = TColumn['_']['notNull'] extends false
 	? z.ZodNullable<TType>
@@ -135,7 +138,7 @@ export function createInsertSchema<
 	for (const [name, column] of columnEntries) {
 		if (!column.notNull) {
 			schemaEntries[name] = schemaEntries[name]!.nullable().optional();
-		} else if (column.hasDefault) {
+		} else if (column.hasDefault || column.generated) {
 			schemaEntries[name] = schemaEntries[name]!.optional();
 		}
 	}
