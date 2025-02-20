@@ -1,6 +1,6 @@
 {
   "name": "@metamorph/drizzle-orm",
-  "version": "0.39.4",
+  "version": "0.39.5",
   "description": "Drizzle ORM package for SQL databases",
   "type": "module",
   "scripts": {
