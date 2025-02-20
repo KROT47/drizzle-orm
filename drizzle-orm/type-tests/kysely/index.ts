@@ -1,4 +1,4 @@
-import { Kysely, PostgresDialect } from 'kysely';
+import { Kysely, PostgresDialect } from '@metamorph/kysely';
 import pg from 'pg';
 import { type Equal, Expect } from 'type-tests/utils.ts';
 import type { Kyselify } from '~/kysely/index.ts';

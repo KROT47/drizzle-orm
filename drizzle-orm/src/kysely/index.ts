@@ -1,4 +1,4 @@
-import type { ColumnType } from 'kysely';
+import type { ColumnType } from '@metamorph/kysely';
 import type { InferInsertModel, InferSelectModel, MapColumnName, Table } from '~/table.ts';
 import type { Simplify } from '~/utils.ts';
 

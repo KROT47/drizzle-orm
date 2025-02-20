@@ -7,10 +7,10 @@ This is a toolchain for integrating Drizzle with [Kysely](https://kysely-org.git
 You can define you DB schema using Drizzle and use Kysely as the query builder. With this approach you benefit from schema definition and automated migrations provided by Drizzle, and you can use Kysely to build your queries. This might be helpful if you have an existing Kysely project and you want to add Drizzle features to it.
 
 ```ts
-import { Kysely, PostgresDialect } from 'kysely';
+import { Kysely, PostgresDialect } from '@metamorph/kysely';
 import { Pool } from 'pg';
-import { Kyselify } from 'drizzle-orm/kysely';
-import { pgTable, serial, text } from 'drizzle-orm/pg-core';
+import { Kyselify } from '@metamorph/drizzle-orm/kysely';
+import { pgTable, serial, text } from '@metamorph/drizzle-orm/pg-core';
 
 const test = pgTable('test', {
   id: serial('id').primaryKey(),
