@@ -21,7 +21,7 @@ export default defineConfig([
 			},
 		],
 		external: [
-			/^drizzle-orm\/?/,
+			/^@metamorph\/drizzle-orm\/?/,
 			'zod',
 		],
 		plugins: [

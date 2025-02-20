@@ -1,4 +1,4 @@
-import type { Column, ColumnBaseConfig } from 'drizzle-orm';
+import type { Column, ColumnBaseConfig } from '@metamorph/drizzle-orm';
 import type {
 	MySqlBigInt53,
 	MySqlChar,
@@ -13,7 +13,7 @@ import type {
 	MySqlTinyInt,
 	MySqlVarChar,
 	MySqlYear,
-} from 'drizzle-orm/mysql-core';
+} from '@metamorph/drizzle-orm/mysql-core';
 import type {
 	PgArray,
 	PgBigInt53,
@@ -36,7 +36,7 @@ import type {
 	PgUUID,
 	PgVarchar,
 	PgVector,
-} from 'drizzle-orm/pg-core';
+} from '@metamorph/drizzle-orm/pg-core';
 import type {
 	SingleStoreBigInt53,
 	SingleStoreChar,
@@ -51,8 +51,8 @@ import type {
 	SingleStoreTinyInt,
 	SingleStoreVarChar,
 	SingleStoreYear,
-} from 'drizzle-orm/singlestore-core';
-import type { SQLiteInteger, SQLiteReal, SQLiteText } from 'drizzle-orm/sqlite-core';
+} from '@metamorph/drizzle-orm/singlestore-core';
+import type { SQLiteInteger, SQLiteReal, SQLiteText } from '@metamorph/drizzle-orm/sqlite-core';
 import { z } from 'zod';
 import { z as zod } from 'zod';
 import { CONSTANTS } from './constants.ts';

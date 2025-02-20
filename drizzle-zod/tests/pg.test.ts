@@ -1,4 +1,4 @@
-import { type Equal, sql } from 'drizzle-orm';
+import { type Equal, sql } from '@metamorph/drizzle-orm';
 import {
 	customType,
 	integer,
@@ -9,7 +9,7 @@ import {
 	pgView,
 	serial,
 	text,
-} from 'drizzle-orm/pg-core';
+} from '@metamorph/drizzle-orm/pg-core';
 import { test } from 'vitest';
 import { z } from 'zod';
 import { jsonSchema } from '~/column.ts';

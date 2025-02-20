@@ -1,4 +1,4 @@
-import type { Assume, Column, DrizzleTypeError, SelectedFieldsFlat, Simplify, Table, View } from 'drizzle-orm';
+import type { Assume, Column, DrizzleTypeError, SelectedFieldsFlat, Simplify, Table, View } from '@metamorph/drizzle-orm';
 import type { z } from 'zod';
 import type { GetBaseColumn, GetEnumValuesFromColumn, GetZodType, HandleColumn } from './column.types.ts';
 import type { GetSelection, RemoveNever } from './utils.ts';

@@ -1,5 +1,5 @@
-import { type Equal, sql } from 'drizzle-orm';
-import { customType, int, mysqlSchema, mysqlTable, mysqlView, serial, text } from 'drizzle-orm/mysql-core';
+import { type Equal, sql } from '@metamorph/drizzle-orm';
+import { customType, int, mysqlSchema, mysqlTable, mysqlView, serial, text } from '@metamorph/drizzle-orm/mysql-core';
 import { test } from 'vitest';
 import { z } from 'zod';
 import { jsonSchema } from '~/column.ts';

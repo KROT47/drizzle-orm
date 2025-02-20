@@ -1,5 +1,5 @@
-import { type Equal, sql } from 'drizzle-orm';
-import { customType, int, sqliteTable, sqliteView, text } from 'drizzle-orm/sqlite-core';
+import { type Equal, sql } from '@metamorph/drizzle-orm';
+import { customType, int, sqliteTable, sqliteView, text } from '@metamorph/drizzle-orm/sqlite-core';
 import { test } from 'vitest';
 import { z } from 'zod';
 import { bufferSchema, jsonSchema } from '~/column.ts';

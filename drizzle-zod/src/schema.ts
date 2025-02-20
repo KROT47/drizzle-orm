@@ -1,6 +1,6 @@
-import { Column, getTableColumns, getViewSelectedFields, is, isTable, isView, SQL } from 'drizzle-orm';
-import type { Table, View } from 'drizzle-orm';
-import type { PgEnum } from 'drizzle-orm/pg-core';
+import { Column, getTableColumns, getViewSelectedFields, is, isTable, isView, SQL } from '@metamorph/drizzle-orm';
+import type { Table, View } from '@metamorph/drizzle-orm';
+import type { PgEnum } from '@metamorph/drizzle-orm/pg-core';
 import { z } from 'zod';
 import { columnToSchema } from './column.ts';
 import type { Conditions } from './schema.types.internal.ts';

@@ -19,8 +19,8 @@
 # Usage
 
 ```ts
-import { pgEnum, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
-import { createInsertSchema, createSelectSchema } from 'drizzle-zod';
+import { pgEnum, pgTable, serial, text, timestamp } from '@metamorph/drizzle-orm/pg-core';
+import { createInsertSchema, createSelectSchema } from '@metamorph/drizzle-zod';
 import { z } from 'zod';
 
 const users = pgTable('users', {

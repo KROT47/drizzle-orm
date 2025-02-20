@@ -1,5 +1,5 @@
-import type { Column, SelectedFieldsFlat, Table, View } from 'drizzle-orm';
-import type { PgEnum } from 'drizzle-orm/pg-core';
+import type { Column, SelectedFieldsFlat, Table, View } from '@metamorph/drizzle-orm';
+import type { PgEnum } from '@metamorph/drizzle-orm/pg-core';
 import type { z } from 'zod';
 import type { literalSchema } from './column.ts';
 
